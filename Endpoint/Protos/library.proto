@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+option csharp_namespace = "Endpoint";
+
+package library;
+
+service LibraryWork {
+  rpc GetBooksByGenre (GetBooksByGenreRequest) returns (GetBooksByGenreResponse);
+  rpc AddBook (AddBookRequest) returns (AddBookResponse);
+  rpc AddBooks (AddBooksRequest) returns (AddBooksResponse);
+}
+
+message GetBooksByGenreRequest {
+  string genre = 1;
+}
+
+message GetBooksByGenreResponse {
+  repeated BookToGet books = 1;
+}
+
+
+message AddBookRequest {
+  BookToAdd new_book = 1;
+}
+
+message AddBookResponse{}
+
+
+message AddBooksRequest {
+  repeated BookToAdd new_books = 1;
+}
+
+message AddBooksResponse{}
+
+message BookToAdd {
+  string name = 1;
+  string genre = 2;
+  Author author = 3;
+}
+
+message BookToGet {
+  string id = 1;
+  string name = 2;
+  string genre = 3;
+  Author author = 4;
+}
+
+message Author {
+  string name = 1;
+  string surname = 2;
+}

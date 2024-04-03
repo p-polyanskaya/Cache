@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "lMbAH828D/SSkOelew9MXTrNkX3HtlXhr+jnabNs1LIkTg86c7BqJvtIWTsrm7oVsd9+WMX1ETYFQhKNwB9Kfw==",
+  "success": true,
+  "projectFilePath": "/Users/polina/Documents/GitHub/Cache/Application/Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/polina/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.1/microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "/Users/polina/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.1/microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
+    "/Users/polina/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/polina/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/polina/.nuget/packages/stackexchange.redis/2.7.33/stackexchange.redis.2.7.33.nupkg.sha512",
+    "/Users/polina/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

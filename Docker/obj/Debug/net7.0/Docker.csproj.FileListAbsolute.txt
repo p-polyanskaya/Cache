@@ -1,0 +1,12 @@
+/Users/polina/Documents/GitHub/Cache/Docker/bin/Debug/net7.0/Docker.deps.json
+/Users/polina/Documents/GitHub/Cache/Docker/bin/Debug/net7.0/Docker.dll
+/Users/polina/Documents/GitHub/Cache/Docker/bin/Debug/net7.0/Docker.pdb
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/Docker.csproj.AssemblyReference.cache
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/Docker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/Docker.AssemblyInfoInputs.cache
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/Docker.AssemblyInfo.cs
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/Docker.csproj.CoreCompileInputs.cache
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/Docker.dll
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/refint/Docker.dll
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/Docker.pdb
+/Users/polina/Documents/GitHub/Cache/Docker/obj/Debug/net7.0/ref/Docker.dll

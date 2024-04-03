@@ -1,0 +1,12 @@
+/Users/polina/Documents/GitHub/Cache/RedisOperations/bin/Debug/net7.0/RedisOperations.deps.json
+/Users/polina/Documents/GitHub/Cache/RedisOperations/bin/Debug/net7.0/RedisOperations.dll
+/Users/polina/Documents/GitHub/Cache/RedisOperations/bin/Debug/net7.0/RedisOperations.pdb
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/RedisOperations.csproj.AssemblyReference.cache
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/RedisOperations.GeneratedMSBuildEditorConfig.editorconfig
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/RedisOperations.AssemblyInfoInputs.cache
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/RedisOperations.AssemblyInfo.cs
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/RedisOperations.csproj.CoreCompileInputs.cache
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/RedisOperations.dll
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/refint/RedisOperations.dll
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/RedisOperations.pdb
+/Users/polina/Documents/GitHub/Cache/RedisOperations/obj/Debug/net7.0/ref/RedisOperations.dll
