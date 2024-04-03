@@ -57,6 +57,18 @@ namespace Endpoint {
     static readonly grpc::Marshaller<global::Endpoint.AddBooksRequest> __Marshaller_library_AddBooksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Endpoint.AddBooksRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Endpoint.AddBooksResponse> __Marshaller_library_AddBooksResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Endpoint.AddBooksResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Endpoint.DeleteAllBooksByGenreRequest> __Marshaller_library_DeleteAllBooksByGenreRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Endpoint.DeleteAllBooksByGenreRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Endpoint.DeleteAllBooksByGenreResponse> __Marshaller_library_DeleteAllBooksByGenreResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Endpoint.DeleteAllBooksByGenreResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Endpoint.DeleteBookByIdsRequest> __Marshaller_library_DeleteBookByIdsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Endpoint.DeleteBookByIdsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Endpoint.DeleteBookByIdsResponse> __Marshaller_library_DeleteBookByIdsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Endpoint.DeleteBookByIdsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Endpoint.DeleteBookByIdRequest> __Marshaller_library_DeleteBookByIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Endpoint.DeleteBookByIdRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Endpoint.DeleteBookByIdResponse> __Marshaller_library_DeleteBookByIdResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Endpoint.DeleteBookByIdResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Endpoint.GetBooksByGenreRequest, global::Endpoint.GetBooksByGenreResponse> __Method_GetBooksByGenre = new grpc::Method<global::Endpoint.GetBooksByGenreRequest, global::Endpoint.GetBooksByGenreResponse>(
@@ -81,6 +93,30 @@ namespace Endpoint {
         "AddBooks",
         __Marshaller_library_AddBooksRequest,
         __Marshaller_library_AddBooksResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Endpoint.DeleteAllBooksByGenreRequest, global::Endpoint.DeleteAllBooksByGenreResponse> __Method_DeleteAllBooksByGenre = new grpc::Method<global::Endpoint.DeleteAllBooksByGenreRequest, global::Endpoint.DeleteAllBooksByGenreResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteAllBooksByGenre",
+        __Marshaller_library_DeleteAllBooksByGenreRequest,
+        __Marshaller_library_DeleteAllBooksByGenreResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Endpoint.DeleteBookByIdsRequest, global::Endpoint.DeleteBookByIdsResponse> __Method_DeleteBookByIds = new grpc::Method<global::Endpoint.DeleteBookByIdsRequest, global::Endpoint.DeleteBookByIdsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteBookByIds",
+        __Marshaller_library_DeleteBookByIdsRequest,
+        __Marshaller_library_DeleteBookByIdsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Endpoint.DeleteBookByIdRequest, global::Endpoint.DeleteBookByIdResponse> __Method_DeleteBookById = new grpc::Method<global::Endpoint.DeleteBookByIdRequest, global::Endpoint.DeleteBookByIdResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteBookById",
+        __Marshaller_library_DeleteBookByIdRequest,
+        __Marshaller_library_DeleteBookByIdResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -110,6 +146,24 @@ namespace Endpoint {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Endpoint.DeleteAllBooksByGenreResponse> DeleteAllBooksByGenre(global::Endpoint.DeleteAllBooksByGenreRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Endpoint.DeleteBookByIdsResponse> DeleteBookByIds(global::Endpoint.DeleteBookByIdsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Endpoint.DeleteBookByIdResponse> DeleteBookById(global::Endpoint.DeleteBookByIdRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -120,7 +174,10 @@ namespace Endpoint {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetBooksByGenre, serviceImpl.GetBooksByGenre)
           .AddMethod(__Method_AddBook, serviceImpl.AddBook)
-          .AddMethod(__Method_AddBooks, serviceImpl.AddBooks).Build();
+          .AddMethod(__Method_AddBooks, serviceImpl.AddBooks)
+          .AddMethod(__Method_DeleteAllBooksByGenre, serviceImpl.DeleteAllBooksByGenre)
+          .AddMethod(__Method_DeleteBookByIds, serviceImpl.DeleteBookByIds)
+          .AddMethod(__Method_DeleteBookById, serviceImpl.DeleteBookById).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -133,6 +190,9 @@ namespace Endpoint {
       serviceBinder.AddMethod(__Method_GetBooksByGenre, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Endpoint.GetBooksByGenreRequest, global::Endpoint.GetBooksByGenreResponse>(serviceImpl.GetBooksByGenre));
       serviceBinder.AddMethod(__Method_AddBook, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Endpoint.AddBookRequest, global::Endpoint.AddBookResponse>(serviceImpl.AddBook));
       serviceBinder.AddMethod(__Method_AddBooks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Endpoint.AddBooksRequest, global::Endpoint.AddBooksResponse>(serviceImpl.AddBooks));
+      serviceBinder.AddMethod(__Method_DeleteAllBooksByGenre, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Endpoint.DeleteAllBooksByGenreRequest, global::Endpoint.DeleteAllBooksByGenreResponse>(serviceImpl.DeleteAllBooksByGenre));
+      serviceBinder.AddMethod(__Method_DeleteBookByIds, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Endpoint.DeleteBookByIdsRequest, global::Endpoint.DeleteBookByIdsResponse>(serviceImpl.DeleteBookByIds));
+      serviceBinder.AddMethod(__Method_DeleteBookById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Endpoint.DeleteBookByIdRequest, global::Endpoint.DeleteBookByIdResponse>(serviceImpl.DeleteBookById));
     }
 
   }

@@ -20,7 +20,7 @@ public class LibraryGrpcService : LibraryWork.LibraryWorkBase
 
     public override async Task<AddBooksResponse> AddBooks(AddBooksRequest request, ServerCallContext context)
     {
-        await _libraryService.AddBooks(request.NewBooks.Select(book => ToDomain(book)).ToArray());
+        await _libraryService.AddBooks(request.NewBooks.Select(ToDomain).ToArray());
         return new AddBooksResponse();
     }
 
@@ -31,6 +31,23 @@ public class LibraryGrpcService : LibraryWork.LibraryWorkBase
         {
             Books = { books.Select(ToProto) }
         };
+    }
+
+    public override async Task<DeleteBookByIdResponse> DeleteBookById(DeleteBookByIdRequest request, ServerCallContext context)
+    {
+        await _libraryService.DeleteBookById(request.BookId);
+        return new DeleteBookByIdResponse();
+    }
+
+    public override async Task<DeleteAllBooksByGenreResponse> DeleteAllBooksByGenre(DeleteAllBooksByGenreRequest request, ServerCallContext context)
+    {
+        await _libraryService.DeleteBookByGenre(request.Genre);
+        return new DeleteAllBooksByGenreResponse();
+    }
+
+    public override Task<DeleteBookByIdsResponse> DeleteBookByIds(DeleteBookByIdsRequest request, ServerCallContext context)
+    {
+        throw new NotImplementedException();
     }
 
     private static Domain.Book ToDomain(BookToAdd book)

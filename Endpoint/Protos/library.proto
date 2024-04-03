@@ -8,7 +8,36 @@ service LibraryWork {
   rpc GetBooksByGenre (GetBooksByGenreRequest) returns (GetBooksByGenreResponse);
   rpc AddBook (AddBookRequest) returns (AddBookResponse);
   rpc AddBooks (AddBooksRequest) returns (AddBooksResponse);
+  rpc DeleteAllBooksByGenre (DeleteAllBooksByGenreRequest) returns (DeleteAllBooksByGenreResponse);
+  rpc DeleteBookByIds (DeleteBookByIdsRequest) returns (DeleteBookByIdsResponse);
+  rpc DeleteBookById (DeleteBookByIdRequest) returns (DeleteBookByIdResponse);
 }
+
+message DeleteBookByIdsRequest {
+  string book_id = 1;
+}
+
+message DeleteBookByIdsResponse {
+}
+
+message DeleteBookByIdRequest {
+  string book_id = 1;
+}
+
+message DeleteBookByIdResponse {
+}
+
+
+
+message DeleteAllBooksByGenreRequest {
+  string genre = 1;
+}
+
+message DeleteAllBooksByGenreResponse {
+  repeated string book_id = 1;
+}
+
+
 
 message GetBooksByGenreRequest {
   string genre = 1;

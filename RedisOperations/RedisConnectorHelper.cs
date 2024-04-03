@@ -11,6 +11,6 @@ public class RedisConnectorHelper
 
     private static readonly Lazy<ConnectionMultiplexer> LazyConnection;
 
-    private static ConnectionMultiplexer Connection => LazyConnection.Value;
+    public static ConnectionMultiplexer Connection => LazyConnection.Value;
     public static IDatabase Database => Connection.GetDatabase();
 }
